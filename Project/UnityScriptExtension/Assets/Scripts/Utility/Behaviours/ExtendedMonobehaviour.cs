@@ -51,9 +51,7 @@
         /// <param name="sceneObjectName">Scene object name.</param>
         /// <param name="createGameObject">Create new scene object if object doesn't exist.</param>
         /// <param name="addComponent">Add new component if object doesn't have component.</param>
-        /// <returns>T</returns>
-        protected T GetComponentAt<T>(string sceneObjectName,
-                bool createGameObject = false, bool addComponent = false) where T : Component
+        protected T GetComponentAt<T>(string sceneObjectName, bool createGameObject = false, bool addComponent = false) where T : Component
         {
             GameObject sceneObject = GameObject.Find(sceneObjectName);
             if (sceneObject.IsNull())
@@ -91,9 +89,8 @@
         /// <typeparam name="T">New component.</typeparam>
         /// <param name="sceneObject">Scene object.</param>
         /// <param name="newObjectName">Create new scene object if object doesn't exist.</param>
-        /// <param name="createGameObject"></param>
+        /// <param name="createGameObject">Create Gameobject if object does'nt exist.</param>
         /// <param name="addComponent">Add new component if object doesn't have component.</param>
-        /// <returns>T</returns>
         protected T GetComponentAt<T>(GameObject sceneObject, string newObjectName = "GameObject",
                 bool createGameObject = false, bool addComponent = false) where T : Component
         {
@@ -129,11 +126,9 @@
         /// <summary>
         /// Find Components with Gameobject nmae.
         /// </summary>
-        /// <typeparam name="T">New component.</typeparam>
         /// <param name="sceneObjectName">Scene object name.</param>
         /// <param name="createGameObject">Create new scene object if object doesn't exist.</param>
         /// <param name="addComponent">Add new component if object doesn't have component.</param>
-        /// <returns>List<T></returns>
         protected List<T> GetComponentsAt<T>(string sceneObjectName) where T : Component
         {
             GameObject sceneObject = GameObject.Find(sceneObjectName);
@@ -155,12 +150,7 @@
         /// <summary>
         /// Find Components in GameObject.
         /// </summary>
-        /// <typeparam name="T">New component.</typeparam>
         /// <param name="sceneObject">Scene object.</param>
-        /// <param name="newObjectName">Create new scene object if object doesn't exist.</param>
-        /// <param name="createGameObject"></param>
-        /// <param name="addComponent">Add new component if object doesn't have component.</param>
-        /// <returns>List<T></returns>
         protected List<T> GetComponentsAt<T>(GameObject sceneObject) where T : Component
         {
             if (sceneObject.IsNull())
