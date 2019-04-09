@@ -1,6 +1,7 @@
 ﻿namespace developer0223.Utility.CustomClasses
 {
     // C#
+    using System.Text;
     using System.Collections.Generic;
 
     public class CustomDictionary<TKey, TValue> : Dictionary<TKey, TValue>
@@ -55,6 +56,18 @@
             }
 
             return result;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            foreach(TKey key in Keys)
+            {
+                builder.Append($"{{{key}, {this[key]}}} ");
+            }
+
+            return builder.ToString();
         }
     }
 }
