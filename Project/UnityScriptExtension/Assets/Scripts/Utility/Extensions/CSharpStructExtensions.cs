@@ -8,6 +8,10 @@
     /// Blog : https://developer0223.tistory.com/
     /// </summary>
 
+    // C#
+    using System.Linq;
+    using System.Text;
+
     public static class CSharpStructExtensions
     {
         #region string (System.String)
@@ -80,6 +84,21 @@
                     return true;
             }
             return false;
+        }
+
+        /// <summary>
+        /// Make string reverse.
+        /// </summary>
+        public static string Reverse(this string @string)
+        {
+            StringBuilder builder = new StringBuilder();
+            char[] array = @string.ToArray();
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                builder.Append(array[i]);
+            }
+
+            return builder.ToString();
         }
         #endregion
 
