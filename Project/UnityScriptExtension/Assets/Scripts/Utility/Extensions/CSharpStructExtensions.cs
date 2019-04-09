@@ -9,6 +9,7 @@
     /// </summary>
 
     // C#
+    using System;
     using System.Linq;
     using System.Text;
 
@@ -135,12 +136,33 @@
         #endregion
 
         #region float (System.Single)
+        /// <summary>
+        /// Make float to round int value.
+        /// </summary>
+        public static int ToRoundInteger(this float @float)
+        {
+            return (int)Math.Round(@float);
+        }
         #endregion
 
         #region double (System.Double)
+        /// <summary>
+        /// Make double to round int value.
+        /// </summary>
+        public static int ToRoundInteger(this double @double)
+        {
+            return (int)Math.Round(@double);
+        }
         #endregion
 
         #region bool (System.Boolean)
+        /// <summary>
+        /// Returns opposite value.
+        /// </summary>
+        public static bool Reverse(this bool @bool)
+        {
+            return !@bool;
+        }
         #endregion
     }
 }

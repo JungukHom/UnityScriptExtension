@@ -10,8 +10,8 @@
     {
         private void Start()
         {
-            string str = "12345";
-            Debug.Log(str.Reverse());
+            float test = 1.5f;
+            Debug.Log(test.ToRoundInteger());
         }
     }
 }
