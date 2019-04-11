@@ -20,7 +20,7 @@
             return result;
         }
 
-        public static CustomDictionary<TKey, TValue> operator +(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
+        public static CustomDictionary<TKey, TValue> operator |(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
         {
             CustomDictionary<TKey, TValue> result = new CustomDictionary<TKey, TValue>();
             foreach (TKey aCollection in a.Keys)

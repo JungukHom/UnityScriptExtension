@@ -26,7 +26,7 @@
                 { 4, "four" }
             };
 
-            CustomDictionary<int, string> plus = (dic_01 + dic_02) - (dic_01 & dic_02);
+            CustomDictionary<int, string> plus = (dic_01 | dic_02) - (dic_01 & dic_02);
             foreach(int key in plus.Keys)
             {
                 Debug.Log($"{key} : {plus[key]}");
