@@ -1,4 +1,4 @@
-﻿namespace developer0223.Utility.CustomClasses
+﻿namespace developer0223.Utilities.CustomClasses
 {
     // C#
     using System.Text;

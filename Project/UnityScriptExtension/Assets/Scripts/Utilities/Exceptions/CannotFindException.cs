@@ -1,4 +1,4 @@
-﻿namespace developer0223.Utility.Exceptions
+﻿namespace developer0223.Utilities.Exceptions
 {
     // C#
     using System;

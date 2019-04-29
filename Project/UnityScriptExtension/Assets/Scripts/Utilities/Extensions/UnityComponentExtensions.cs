@@ -1,4 +1,4 @@
-﻿namespace developer0223.Utility.Extensions
+﻿namespace developer0223.Utilities.Extensions
 {
     /// <summary>
     /// Unity component's extension class.
@@ -62,21 +62,21 @@
         /// Get child object's component at index.
         /// </summary>
         /// <param name="index">Child index.</param>
-        public static T GetChildComponentAt<T>(this GameObject obj, int index)
+        public static T GetChildComponentAt<T>(this GameObject gameObject, int index)
         {
-            return obj.transform.GetChild(index).GetComponent<T>();
+            return gameObject.transform.GetChild(index).GetComponent<T>();
         }
 
         /// <summary>
         /// Destroy all children gameObject.
         /// </summary>
-        public static void DestroyAllChildren(this GameObject obj)
+        public static void DestroyAllChildren(this GameObject gameObject)
         {
-            if (!obj.IsNull())
+            if (!gameObject.IsNull())
             {
-                Transform transform = obj.GetComponent<Transform>();
+                Transform transform = gameObject.GetComponent<Transform>();
                 for (int i = transform.childCount - 1; i >= 0; i--)
-                    Object.Destroy(obj.transform.GetChild(i).gameObject);
+                    Object.Destroy(gameObject.transform.GetChild(i).gameObject);
             }
         }
         #endregion

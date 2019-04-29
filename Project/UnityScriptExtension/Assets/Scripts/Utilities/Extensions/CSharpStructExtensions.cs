@@ -1,4 +1,4 @@
-﻿namespace developer0223.Utility.Extensions
+﻿namespace developer0223.Utilities.Extensions
 {
     /// <summary>
     /// C# struct's extension class.

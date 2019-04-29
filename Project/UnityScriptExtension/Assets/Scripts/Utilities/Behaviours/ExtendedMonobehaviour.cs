@@ -1,4 +1,4 @@
-﻿namespace developer0223.Utility.Behaviours
+﻿namespace developer0223.Utilities.Behaviours
 {
     /// <summary>
     /// UnityEngine.MonoBehaviour's extended class for Unity Engine.
