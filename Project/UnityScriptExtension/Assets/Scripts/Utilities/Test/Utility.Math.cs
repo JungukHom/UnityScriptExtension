@@ -6,9 +6,5 @@
 
     public static partial class Utility
     {
-        public static T Add<T>(params T[] values) where T : IEquatable<T>
-        {
-            
-        }
     }
 }
