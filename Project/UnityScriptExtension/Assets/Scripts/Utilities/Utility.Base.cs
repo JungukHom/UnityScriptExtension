@@ -6,7 +6,8 @@
     // Unity
     using UnityEngine;
 
-    public partial class Utility // .Math
+    public partial class Utility // .?????
     {
+
     }
 }

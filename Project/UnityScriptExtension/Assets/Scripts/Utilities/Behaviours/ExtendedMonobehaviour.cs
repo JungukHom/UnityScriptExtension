@@ -20,7 +20,7 @@
     using Extensions;
     using Exceptions;
 
-    public abstract class ExtendedMonobehaviour : MonoBehaviour
+    public abstract class ExtendedMonoBehaviour : MonoBehaviour
     {
         // Cached Components
         [HideInInspector]

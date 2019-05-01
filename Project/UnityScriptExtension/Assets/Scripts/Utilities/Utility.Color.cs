@@ -1,8 +1,9 @@
 ﻿namespace developer0223.Utilities
 {
+    // Unity
     using UnityEngine;
 
-    public static partial class Utility
+    public partial class Utility // .Color
     {
         private static readonly float MinValue = 0;
         private static readonly float MaxValue = 255;
