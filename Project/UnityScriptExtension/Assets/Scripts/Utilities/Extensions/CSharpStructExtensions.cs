@@ -1,7 +1,7 @@
 ﻿namespace developer0223.Utilities.Extensions
 {
     /// <summary>
-    /// C# struct's extension class.
+    /// C# struct extension class.
     /// 
     /// Developer Information
     /// GitHub : https://github.com/jungukhom

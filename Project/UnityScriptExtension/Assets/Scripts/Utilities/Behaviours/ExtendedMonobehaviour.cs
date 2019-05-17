@@ -1,7 +1,7 @@
 ﻿namespace developer0223.Utilities.Behaviours
 {
     /// <summary>
-    /// UnityEngine.MonoBehaviour's extended class for Unity Engine.
+    /// UnityEngine.MonoBehaviour extend class for Unity Engine.
     /// 
     /// Developer Information
     /// GitHub : https://github.com/jungukhom

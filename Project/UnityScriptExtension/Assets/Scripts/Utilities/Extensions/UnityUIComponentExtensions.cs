@@ -1,7 +1,7 @@
 ﻿namespace developer0223.Utilities.Extensions
 {
     /// <summary>
-    /// Unity UI component's extension class.
+    /// Unity UI component extension class.
     /// 
     /// Developer Information
     /// GitHub : https://github.com/jungukhom

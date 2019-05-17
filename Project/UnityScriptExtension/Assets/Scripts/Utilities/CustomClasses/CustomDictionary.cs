@@ -1,5 +1,13 @@
 ﻿namespace developer0223.Utilities.CustomClasses
 {
+    /// <summary>
+    /// Custom Dictionary class.
+    /// 
+    /// Developer Information
+    /// GitHub : https://github.com/jungukhom
+    /// Blog : https://developer0223.tistory.com/
+    /// </summary>
+    /// 
     // C#
     using System.Text;
     using System.Collections.Generic;

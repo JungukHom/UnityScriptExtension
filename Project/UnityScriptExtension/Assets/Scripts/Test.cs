@@ -12,7 +12,6 @@
     {
         private void Start()
         {
-            Utility.Add(new int[11, 22, 33]);
         }
     }
 }
