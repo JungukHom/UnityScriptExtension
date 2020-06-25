@@ -17,11 +17,11 @@
         public static CustomDictionary<TKey, TValue> operator &(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
         {
             CustomDictionary<TKey, TValue> result = new CustomDictionary<TKey, TValue>();
-            foreach (TKey aCollection in a.Keys)
+            foreach (TKey aElement in a.Keys)
             {
-                if (b.ContainsKey(aCollection))
+                if (b.ContainsKey(aElement))
                 {
-                    result.Add(aCollection, a[aCollection]);
+                    result.Add(aElement, a[aElement]);
                 }
             }
 
@@ -31,16 +31,16 @@
         public static CustomDictionary<TKey, TValue> operator |(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
         {
             CustomDictionary<TKey, TValue> result = new CustomDictionary<TKey, TValue>();
-            foreach (TKey aCollection in a.Keys)
+            foreach (TKey aElement in a.Keys)
             {
-                result.Add(aCollection, a[aCollection]);
+                result.Add(aElement, a[aElement]);
             }
 
-            foreach (TKey bCollection in b.Keys)
+            foreach (TKey bElement in b.Keys)
             {
-                if (!result.ContainsKey(bCollection))
+                if (!result.ContainsKey(bElement))
                 {
-                    result.Add(bCollection, b[bCollection]);
+                    result.Add(bElement, b[bElement]);
                 }
             }
 
@@ -50,16 +50,35 @@
         public static CustomDictionary<TKey, TValue> operator -(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
         {
             CustomDictionary<TKey, TValue> result = new CustomDictionary<TKey, TValue>();
-            foreach (TKey aCollection in a.Keys)
+            foreach (TKey aElement in a.Keys)
             {
-                result.Add(aCollection, a[aCollection]);
+                result.Add(aElement, a[aElement]);
             }
 
-            foreach (TKey bCollection in b.Keys)
+            foreach (TKey bElement in b.Keys)
             {
-                if (result.ContainsKey(bCollection))
+                if (result.ContainsKey(bElement))
                 {
-                    result.Remove(bCollection);
+                    result.Remove(bElement);
+                }
+            }
+
+            return result;
+        }
+
+        public static CustomDictionary<TKey, TValue> operator +(CustomDictionary<TKey, TValue> a, CustomDictionary<TKey, TValue> b)
+        {
+            CustomDictionary<TKey, TValue> result = new CustomDictionary<TKey, TValue>();
+            foreach (TKey aElement in a.Keys)
+            {
+                result.Add(aElement, a[aElement]);
+            }
+
+            foreach (TKey bElement in b.Keys)
+            {
+                if (!result.ContainsKey(bElement))
+                {
+                    result.Add(bElement, b[bElement]);
                 }
             }
 

@@ -34,7 +34,7 @@
 
         private void OnCreated()
         {
-            // 화면 크기를 가져와 해상도 조절
+            // TODO : 화면 크기를 가져와 해상도 조절
         }
     }
 }

@@ -7,7 +7,8 @@
     /// GitHub : https://github.com/jungukhom
     /// Blog : https://developer0223.tistory.com/
     /// </summary>
-    /// 
+
+    // Unity
     using UnityEngine;
 
     public static class ColorExtensions
